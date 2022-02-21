@@ -1,4 +1,5 @@
 #include "stdc++.h"
+#include "tool.h"
 
 #define pb push_back
 #define fi first
@@ -15,19 +16,12 @@ template <typename T> bool chkMin(T &x, T y) { return (y < x) ? x = y, 1 : 0; }
 
 class Solution {
 public:
-    
-    string arr2cpp(string s) {
-        for (char& c : s) {
-            if (c == '[') c = '{';
-            else if (c == ']') c = '}';
-        }
-        return s;
-    }
 
 };
 
 int main() {
     Solution s;
+    cout << arr2cpp("[1,2,3,4]") << endl;
     return 0;
 }
 
