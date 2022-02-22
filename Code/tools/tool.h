@@ -10,7 +10,7 @@
 using namespace std;
 
 // convert vector to code
-string print_copy_arr(vector<int> arr) {
+string print_code_arr(vector<int> arr) {
     string s = "{";
     int n = arr.size();
     for (int i = 0; i < n; i++) {
@@ -23,8 +23,8 @@ string print_copy_arr(vector<int> arr) {
     return s;
 }
 
-// convert arr desc to code
-string print_copy_arr_s(string s) {
+// convert str to code
+string print_code_s(string s) {
     for (char& c : s) {
         if (c == '[') c = '{';
         else if (c == ']') c = '}';
@@ -45,6 +45,6 @@ vector<int> get_primes(int n) {
             st[j] = true;
         }
     }
-    print_copy_arr(arr);
+    print_code_arr(arr);
     return arr;
 }
