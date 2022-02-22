@@ -5,6 +5,7 @@
 #define fi first
 #define se second
 #define mp make_pair
+#define REP(i,n) for(int (i)=0;(i)<(int)(n);(i)++)
 
 using namespace std;
 
@@ -18,12 +19,14 @@ int dx[4] = {-1, 0, 1, 0}, dy[4] = {0, 1, 0, -1};
 
 class Solution {
 public:
-
+    int numberOfGoodSubsets(vector<int>& nums) {
+        return 0;
+    }
 };
 
 int main() {
+//    cout << arr2cpp("[1,2,3,4]") << endl;
     Solution s;
-    cout << arr2cpp("[1,2,3,4]") << endl;
     return 0;
 }
 
