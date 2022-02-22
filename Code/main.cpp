@@ -17,16 +17,18 @@ template <typename T> bool chkMin(T &x, T y) { return (y < x) ? x = y, 1 : 0; }
 
 int dx[4] = {-1, 0, 1, 0}, dy[4] = {0, 1, 0, -1};
 
-class Solution {
-public:
-    int numberOfGoodSubsets(vector<int>& nums) {
-        return 0;
-    }
-};
+//class Solution {
+//public:
+//    int numberOfGoodSubsets(vector<int>& nums) {
+//        return 0;
+//    }
+//};
 
 int main() {
-//    cout << arr2cpp("[1,2,3,4]") << endl;
-    Solution s;
+//    Solution s;
+    
+    get_primes(30);
+    
     return 0;
 }
 
