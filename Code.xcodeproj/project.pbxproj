@@ -29,6 +29,7 @@
 		02717FB227C391A2004D2DA5 /* tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tool.h; sourceTree = "<group>"; };
 		0276C706276C37EE00DF0B37 /* Doc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Doc.cpp; sourceTree = "<group>"; };
 		02792EFD27BB3BD2005B3014 /* stdc++.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "stdc++.h"; sourceTree = "<group>"; };
+		0284B9C027D5E94A00836448 /* codeSnippet.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = codeSnippet.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		02717FB127C3918F004D2DA5 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				0284B9C027D5E94A00836448 /* codeSnippet.sh */,
 				02717FB227C391A2004D2DA5 /* tool.h */,
 			);
 			path = tools;
@@ -257,7 +259,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Wno-shorten-64-to-32";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-shift-op-parentheses",
+					"-Wno-comma",
+				);
 			};
 			name = Debug;
 		};
@@ -266,7 +272,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Wno-shorten-64-to-32";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-shift-op-parentheses",
+					"-Wno-comma",
+				);
 			};
 			name = Release;
 		};

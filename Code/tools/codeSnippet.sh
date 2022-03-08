@@ -5,17 +5,18 @@ read -p "0：get from local; 1: sync to local;" op
 dir=~/Library/Developer/Xcode/UserData/CodeSnippets
 
 snippet_from_local() {
-	if [[ ! -d ./CodeSnippets ]]; then
-		mkdir ./CodeSnippets
+    path=../CodeSnippets
+	if [[ ! -d "$path" ]]; then
+		mkdir $path
 	fi
 
 	if [[ -d ${dir} ]]; then
-		cp ${dir}/*.codesnippet ./CodeSnippets/
+		cp ${dir}/*.codesnippet $path
 	fi
 }
 
 snippet_to_local() {
-	cp ./CodeSnippets/*.codesnippet ${dir}/
+	cp ../CodeSnippets/*.codesnippet ${dir}/
 }
 
 if [[ ${op} -eq 0 ]]; then
